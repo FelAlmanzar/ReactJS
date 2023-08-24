@@ -6,7 +6,7 @@ function App() {
   return (
   <main className="main">
     <Navbar/>
-    <Container text="Haz clic aquí" />
+    <Container text="Para iniciar" />
   </main>
 );
 }
