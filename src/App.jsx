@@ -1,12 +1,14 @@
 import Navbar from "./components/Navbar";
-import Container from "./components/Container";
+import ItemListContainer from "./components/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 import './App.css';
 
 function App() {
   return (
   <main className="main">
     <Navbar/>
-    <Container text="Para iniciar" />
+    <ItemListContainer greetings="Para iniciar" />
+    <ItemDetailContainer />
   </main>
 );
 }

@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 60px;
+    height: 80px;
     background: black;
 }
 
@@ -27,4 +27,8 @@
 
 .navBar ul li a:hover{
     color: #e1f321;
+}
+
+.brandLogo{
+    padding: 0 20px;
 }

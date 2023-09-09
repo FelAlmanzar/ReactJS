@@ -1,8 +1,9 @@
+import ItemList from "../ItemList";
 import "./style.css";
 import {useState} from "react"; 
 
-function Container({text}) {
-    const [saludo, setSaludo] = useState(text);
+function Container({greetings}) {
+    const [saludo, setSaludo] = useState(greetings);
 
     function changeText() {
         setSaludo ("Bienvenido");
@@ -12,6 +13,7 @@ function Container({text}) {
         <div className="Container_1">
             <p>{saludo}</p>
             <button onClick={changeText}>Presiona aquí</button>
+            <ItemList />
         </div>
     );
 }
