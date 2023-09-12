@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fifa 23",
+        "precio": 300000,
+        "genero": "Deportes",
+        "stock": "50",
+        "imagen": "./images/Fifa-23.webp",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Fifa 22",
+        "precio": 90000,
+        "genero": "Deportes",
+        "stock": "50",
+        "imagen": "images/Fifa-22.webp",
+        "descripcion": "EA SPORTS™ FIFA 22 lleva El Juego de Todos al campo con las nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Halo Infinite",
+        "precio": 255000,
+        "genero": "Aventura",
+        "stock": "50",
+        "imagen": "images/halo_infinite.jpg",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 4,
+        "nombre": "e-football 23",
+        "precio": 220000,
+        "genero": "Deportes",
+        "stock": "50",
+        "imagen": "images/efootball-2023.jpg",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Fornite",
+        "precio": 130000,
+        "genero": "Versus",
+        "stock": "50",
+        "imagen": "images/Fortnite.jpg",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 6,
+        "nombre": "Assassins Creed",
+        "precio": 180000,
+        "genero": "Aventura",
+        "stock": "50",
+        "imagen": "images/Assassins.jpg",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 7,
+        "nombre": "God of War",
+        "precio": 280000,
+        "genero": "Aventura",
+        "stock": "50",
+        "imagen": "images/God of war.jpeg",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Street Fighter 6",
+        "precio": 320000,
+        "genero": "Versus",
+        "stock": "50",
+        "imagen": "images/Street.jfif",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Call of Duty - Warzone",
+        "precio": 200000,
+        "genero": "Versus",
+        "stock": "50",
+        "imagen": "images/COD-WARZONE.webp",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 10,
+        "nombre": "Mario Kart 8 Deluxe",
+        "precio": 240000,
+        "genero": "Carreras",
+        "stock": "50",
+        "imagen": "images/mario-kart-deluxe-8.webp",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 11,
+        "nombre": "NFS Unbound",
+        "precio": 160000,
+        "genero": "Carreras",
+        "stock": "50",
+        "imagen": "images/Need_for_Speed_Unbound.png",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    },
+
+    {
+        "id": 12,
+        "nombre": "Dragon Ball FighterZ",
+        "precio": 95000,
+        "genero": "Aventura",
+        "stock": "50",
+        "imagen": "images/DBZ-Fighter.jpg",
+        "descripcion": "EA SPORTS™ FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos.go.‚"
+    }
+]
