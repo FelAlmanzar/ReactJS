@@ -1,28 +1,35 @@
 import { useState } from "react"
 import "./style.css"
 
-export default function ItemCount() {
-    
-    const [count, setCount] = useState (0)
-
-    function onIncrease (){
-        if(count < 5){
-            setCount(count + 1) 
-        }
-        
-    }
-
-    function onDecrease (){
-        if(count > 0){
-        setCount(count - 1)
-    }
-}
-
+function ItemCount({ count, onQuantityChange }) {
+    const [quantity, setQuantity] = useState(count);
+  
+    const handleIncrement = () => {
+      if (quantity < 5) {
+        setQuantity(quantity + 1);
+        onQuantityChange(quantity + 1);
+      }
+    };
+  
+    const handleDecrement = () => {
+      if (quantity > 1) {
+        setQuantity(quantity - 1);
+        onQuantityChange(quantity - 1);
+      }
+    };
+  
     return (
-        <div>
-            <button onClick={onDecrease}>-</button>
-            <span>{count}</span>
-            <button onClick={onIncrease}>+</button>
-        </div>
-    )
-}
+      <div className="button-container">
+      <button onClick={handleDecrement}>-</button>
+      <span>{count}</span>
+      <button onClick={handleIncrement}>+</button>
+    </div>
+    );
+  }
+  
+  export default ItemCount;
+
+  
+  
+  
+  

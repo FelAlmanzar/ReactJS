@@ -3,7 +3,15 @@ span{
     color: white;
 }
 
-button{
-    height: 30px;
-}
+.button-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+  
+  button {
+    /* Estilos adicionales para los botones */
+    padding: 10px 15px;
+    font-size: 16px;
+  }  
+
 
