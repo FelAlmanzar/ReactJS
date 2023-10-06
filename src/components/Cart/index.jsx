@@ -6,6 +6,7 @@ import ItemCount from "../ItemCount";
 export function Cart() {
 
     const {cart, removeItem, clear, precioTotal} = useCart();
+    
 
     return (
         

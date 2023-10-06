@@ -1,53 +1,50 @@
-import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { useCart } from "../../context/cartContext";
+import { collection, addDoc, doc } from "firebase/firestore";
+import { db } from "../firebase/data";
+import { useState } from "react";
+import "./style.css"
 
 const Checkout = () => {
-  const [formData, setFormData] = useState({
-    nombre: "",
-    email: "",
-    telefono: "",
-  });
+    const [pedidoId, setPedidoId] = useState("");
+  const { cart, precioTotal, clear } = useCart();
+  const { register, handleSubmit } = useForm();
 
-  const { cantidadEnCarrito } = useCart();
+  const comprar = (data) => {
+    const pedido = {
+      cliente: data,
+      productos: cart,
+      total: precioTotal(),
+    };
+    console.log(pedido);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+    const pedidosRef = collection(db, "pedidos")
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes acceder a los valores ingresados por el usuario en formData
-    const { nombre, email, telefono } = formData;
+    addDoc(pedidosRef, pedido)
+    .then((doc) =>{
+    setPedidoId(doc.id)
+    clear();
+})
+  }
 
-    // Realiza alguna acción, como enviar los datos a un servidor, procesar el pedido, etc.
-  };
+  if (pedidoId) {
+    return (
+        <div className="textCompra">
+            <img src="/images/fresh-prince-of-bel-air-celebration-dance-iaxqw2oi7vqgcg5j.gif" alt="" />
+            <h1>Gracias por tu compra</h1>
+            <p>Tu número de pedido es: <br/><strong>{pedidoId}</strong></p>
+            </div>
+    )
+  }
 
   return (
-    <div>
+    <div className="formContainer">
       <h1>Checkout</h1>
-      <form className="formulario" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Nombre"
-          name="nombre"
-          value={formData.nombre}
-          onChange={handleInputChange}
-        />
-        <input
-          type="email"
-          placeholder="Correo"
-          name="email"
-          value={formData.email}
-          onChange={handleInputChange}
-        />
-        <input
-          type="text"
-          placeholder="Teléfono"
-          name="telefono"
-          value={formData.telefono}
-          onChange={handleInputChange}
-        />
+      <form className="formulario" onSubmit={handleSubmit(comprar)}>
+        <input type="text" placeholder="Nombre" {...register("nombre")} />
+        <input type="email" placeholder="Correo" {...register("email")} />
+        <input type="tel" placeholder="Teléfono" {...register("phone")} />
+        
 
         <button className="compra" type="submit">
           Comprar
@@ -58,3 +55,6 @@ const Checkout = () => {
 };
 
 export default Checkout;
+
+
+
