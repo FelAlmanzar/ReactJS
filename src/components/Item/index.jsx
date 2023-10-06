@@ -9,10 +9,7 @@ export default function Item({ product }) {
         <Link to={`/producto/${product.id}`}><img src={product.imagen} alt={product.nombre} /></Link> {/* Agrega un atributo "alt" para accesibilidad */}
         <h2>{product.nombre}</h2>
         <span>$ {product.precio.toLocaleString('es-CO')} COP</span>
-        <ItemCount />
-        <button className="carrito">
-          Agregar al Carrito
-        </button>
+        <Link to={`/producto/${product.id}`}><button className="carrito">Ver más</button></Link>
       </div>
     );
   }
